@@ -148,12 +148,14 @@
         },
         "sdkVersion": "3",
         "targetPlatforms": [
-            "basalt"
+            "aplite",
+            "basalt",
+            "diorite"
         ],
         "uuid": "36eebf93-8580-42c9-be08-6cbc44fd4535",
         "watchapp": {
             "watchface": true
         }
     },
-    "version": "1.0.0"
+    "version": "1.1.0"
 }
