@@ -1,0 +1,159 @@
+{
+    "author": "masataka.miki@gmail.com",
+    "dependencies": {
+        "pebble-clay": "^1.0.2"
+    },
+    "keywords": [],
+    "name": "kanjiface",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "KanjiFace",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "LIKE_KANJI"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/date_sat.png",
+                    "name": "IMAGE_DATE_SAT",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/date_fri.png",
+                    "name": "IMAGE_DATE_FRI",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/date_thu.png",
+                    "name": "IMAGE_DATE_THU",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/date_wed.png",
+                    "name": "IMAGE_DATE_WED",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/date_tue.png",
+                    "name": "IMAGE_DATE_TUE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/date_mon.png",
+                    "name": "IMAGE_DATE_MON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/date_sun.png",
+                    "name": "IMAGE_DATE_SUN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/date_def.png",
+                    "name": "IMAGE_DATE_DEF",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/g_roundbold_kana_004.ttf",
+                    "name": "G_ROUND_BOLD_KANA_48",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/g_roundbold_kana_004.ttf",
+                    "name": "G_ROUND_BOLD_KANA_20",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "images/background.png",
+                    "name": "IMAGE_BACKGROUND",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/AppleGaramond-Bold.ttf",
+                    "name": "APPLE_GARAMOND_BOLD_48",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/AppleGaramond-Bold.ttf",
+                    "name": "APPLE_GARAMOND_BOLD_40",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/AppleGaramond-Bold.ttf",
+                    "name": "APPLE_GARAMOND_BOLD_20",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/AppleGaramond-Bold.ttf",
+                    "name": "APPLE_GARAMOND_BOLD_16",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/AppleGaramond-Bold.ttf",
+                    "name": "APPLE_GARAMOND_BOLD_14",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/AppleGaramond-Bold.ttf",
+                    "name": "APPLE_GARAMOND_BOLD_12",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/AppleGaramond-Bold.ttf",
+                    "name": "APPLE_GARAMOND_BOLD_10",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "images/bt-c.png",
+                    "name": "IMAGE_BT_CONN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/bt-d.png",
+                    "name": "IMAGE_BT_DISCONN",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/menu.png",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "36eebf93-8580-42c9-be08-6cbc44fd4535",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
