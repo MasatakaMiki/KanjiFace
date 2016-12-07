@@ -94,6 +94,16 @@ static void update_time() {
   text_layer_set_text(s_month_layer, "99");
   text_layer_set_text(s_day_layer, "99");
   */
+}
+
+static void update_date() {
+  // Get a tm structure
+  time_t temp = time(NULL);
+  struct tm *tick_time = localtime(&temp);
+
+  // Write the current hours and minutes into a buffer
+  static char s_date_buffer[16];
+  strftime(s_date_buffer, sizeof(s_date_buffer), "%A", tick_time);
 
   // Date image
   if (strcmp(s_date_buffer, "Sunday") == 0) {
@@ -112,7 +122,7 @@ static void update_time() {
     s_date_icon_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_DATE_SAT);
   } else {
     s_date_icon_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_DATE_DEF);
-  }  
+  }
   bitmap_layer_set_bitmap(s_date_icon_layer, s_date_icon_bitmap);
 }
 
@@ -202,6 +212,9 @@ static void main_window_load(Window *window) {
   bluetooth_callback(connection_service_peek_pebble_app_connection());
 
   battery_state_service_subscribe(battery_handler);
+  
+  // update date bitmap at first load
+  update_date();
 }
 
 static void main_window_unload(Window *window) {
@@ -228,6 +241,10 @@ static void main_window_unload(Window *window) {
 
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   update_time();
+  // date update every 30 minutes
+  if(tick_time->tm_min % 30 == 0) {
+    update_date();
+  }
 }
 
 static void inbox_received_callback(DictionaryIterator *iterator, void *context) {
